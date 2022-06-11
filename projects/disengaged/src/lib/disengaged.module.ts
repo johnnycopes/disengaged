@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
-import { DisengagedComponent } from './disengaged.component';
+
+import { ButtonComponent } from './button/button.component';
 
 
 
 @NgModule({
   declarations: [
-    DisengagedComponent
+    ButtonComponent,
   ],
   imports: [
   ],
   exports: [
-    DisengagedComponent
+    ButtonComponent,
   ]
 })
 export class DisengagedModule { }
