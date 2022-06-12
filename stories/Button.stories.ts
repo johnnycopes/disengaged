@@ -1,7 +1,7 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/angular/types-6-0';
 import { moduleMetadata } from '@storybook/angular';
-import { ButtonComponent } from '../projects/ngx/src/lib/button/button.component';
+import { ButtonComponent } from '../projects/ngx/src/public-api';
 
 type ButtonArgs = ButtonComponent & { slot: string };
 
@@ -27,7 +27,7 @@ const Template: Story<ButtonArgs> = (args: ButtonArgs) => ({
   `,
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Default = Template.bind({});
+Default.args = {
   slot: 'Click me!',
 };

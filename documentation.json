@@ -79,18 +79,302 @@
                 }
             },
             "templateData": "<ng-content></ng-content>\n"
+        },
+        {
+            "name": "CheckboxComponent",
+            "id": "component-CheckboxComponent-7ef0679469e8810f76ab86d17567fa6eb9904becb6cb59456f8340965b07eaf98b7ef868f63a7adfcc31170445fa58529d35233111cedb509b4a1807c62753fa",
+            "file": "projects/ngx/src/lib/checkbox/checkbox.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: CheckboxComponent, multi: true\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "ngx-checkbox",
+            "styleUrls": [
+                "./checkbox.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./checkbox.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "bold",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "indeterminate",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "invertColors",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "_onChangeFn",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 21,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "checked",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onChange",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 38,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [
+                                {
+                                    "name": "value",
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [
+                                {
+                                    "name": "value",
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
+                                }
+                            ],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [
+                                {
+                                    "name": "value",
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [
+                                {
+                                    "name": "value",
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
+                                }
+                            ],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector: 'ngx-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [{\n    provide: NG_VALUE_ACCESSOR,\n    useExisting: CheckboxComponent,\n    multi: true\n  }]\n})\nexport class CheckboxComponent implements ControlValueAccessor {\n  @Input() disabled = false;\n  @Input() indeterminate = false;\n  @Input() bold = false;\n  @Input() invertColors = false;\n  public checked = false;\n  private _onChangeFn: (value: boolean) => void = () => undefined;\n\n  constructor(private _changeDetectorRef: ChangeDetectorRef) { }\n\n  writeValue(value: boolean): void {\n    this.checked = value;\n    this._changeDetectorRef.markForCheck();\n  }\n\n  registerOnChange(fn: (value: boolean) => void): void {\n    this._onChangeFn = fn;\n  }\n\n  registerOnTouched(fn: (value: boolean) => void): void {\n    fn;\n  }\n\n  onChange(value: boolean): void {\n    this.checked = value;\n    this._onChangeFn(this.checked);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "// :host {\n//   display: inline-block;\n//   position: relative;\n// }\n\n// .checkbox {\n//   position: relative;\n//   height: 14px;\n//   width: 14px;\n//   border: border(thin) solid color($neutral, 7);\n//   border-radius: 2px;\n\n//   // Default checkmark (unchecked)\n//   &::after {\n//     content: \"\";\n//     position: absolute;\n//     display: none;\n//   }\n// }\n\n// .container {\n//   display: inline-flex;\n//   align-items: center;\n//   position: relative;\n//   font-size: font-size(14);\n\n//   &:hover .checkbox {\n//     background: color($neutral, 10);\n//   }\n\n//   &--disabled {\n//     &:hover .checkbox {\n//       background: none;\n//     }\n//   }\n// }\n\n// .label {\n//   display: inline-flex;\n//   align-items: center;\n//   margin-left: spacing(4);\n//   user-select: none;\n\n//   &--bold {\n//     font-weight: font-weight(bold);\n//   }\n\n//   &--disabled {\n//     font-style: italic;\n//     color: color($neutral, 5);\n//   }\n// }\n\n// // Hide the default checkbox input\n// input {\n//   position: absolute;\n//   margin: 0;\n//   opacity: 0;\n// }\n\n// // Checkmark (indeterminate)\n// input:indeterminate ~ .checkbox::after {\n//   display: block;\n//   left: 50%;\n//   top: 50%;\n//   width: spacing(8);\n//   transform: translate(-50%, -50%);\n//   border-top: border(thin) solid color($neutral, 5);\n// }\n\n// // Checkmark (checked)\n// input:checked ~ .checkbox::after {\n//   display: block;\n//   top: -1px;\n//   left: 2px;\n//   width: 6px;\n//   height: 10px;\n//   border: solid color($neutral, 3);\n//   border-width: 0 border(thin) border(thin) 0;\n//   transform: rotate(45deg);\n// }\n",
+                    "styleUrl": "./checkbox.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_changeDetectorRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 21,
+                "jsdoctags": [
+                    {
+                        "name": "_changeDetectorRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "ControlValueAccessor"
+            ],
+            "templateData": "<label class=\"container\"\n  [class.container--disabled]=\"disabled\"\n>\n  <input class=\"input\"\n    type=\"checkbox\"\n    [indeterminate]=\"indeterminate\"\n    [disabled]=\"disabled\"\n    [ngModel]=\"checked\"\n    (ngModelChange)=\"onChange($event)\"\n  />\n  <div class=\"checkbox\"></div>\n  <div class=\"label\"\n    [class.label--disabled]=\"disabled\"\n  >\n    <ng-content></ng-content>\n  </div>\n</label>\n"
         }
     ],
     "modules": [
         {
-            "name": "DisengagedModule",
-            "id": "module-DisengagedModule-da05623779e2cd97493968a98dad7cb84c0b45f745ecefb487cb5dca7d857276d370c7f1f2bccd9e42e9cf6a5f91faca58b5da75eb096863044445310412b7e1",
+            "name": "NgxModule",
+            "id": "module-NgxModule-285c51f7167552f27776f3116e3a3e5b2f9716102b314bc68aef45ad0aa0e70bd2dca48c78336fa6c5ed3c3abad0c2ec54c8a91529fc7f9aab42ee89e4b20ad8",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/ngx/src/lib/ngx.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { ButtonComponent } from './button/button.component';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n  ],\n  imports: [\n  ],\n  exports: [\n    ButtonComponent,\n  ]\n})\nexport class DisengagedModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\n\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\n\n\n\n@NgModule({\n  imports: [\n    FormsModule,\n  ],\n  declarations: [\n    ButtonComponent,\n    CheckboxComponent,\n  ],\n  exports: [\n    ButtonComponent,\n    CheckboxComponent,\n  ]\n})\nexport class NgxModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -101,6 +385,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
                         }
                     ]
                 },
@@ -113,6 +400,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
                         }
                     ]
                 },
@@ -150,6 +440,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -167,6 +467,16 @@
                 "deprecationMessage": "",
                 "type": "Story<ButtonArgs>",
                 "defaultValue": "(args: ButtonArgs) => ({\n  props: args,\n  template: `\n    <button ngx-button\n      [attr.type]=\"type\"\n    >\n      {{ slot }}\n    </button>\n  `,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CheckboxArgs>",
+                "defaultValue": "(args: CheckboxArgs) => ({\n  props: args,\n  template: `\n    <ngx-checkbox>\n      {{ slot }}\n    </ngx-checkbox>\n  `,\n})"
             }
         ],
         "functions": [],
@@ -192,6 +502,17 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 186
+            },
+            {
+                "name": "CheckboxArgs",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "stories/Checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 187
             }
         ],
         "enumerations": [],
@@ -238,6 +559,28 @@
                     "type": "Story<ButtonArgs>",
                     "defaultValue": "(args: ButtonArgs) => ({\n  props: args,\n  template: `\n    <button ngx-button\n      [attr.type]=\"type\"\n    >\n      {{ slot }}\n    </button>\n  `,\n})"
                 }
+            ],
+            "stories/Checkbox.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CheckboxArgs>",
+                    "defaultValue": "(args: CheckboxArgs) => ({\n  props: args,\n  template: `\n    <ngx-checkbox>\n      {{ slot }}\n    </ngx-checkbox>\n  `,\n})"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -268,6 +611,19 @@
                     "description": "",
                     "kind": 186
                 }
+            ],
+            "stories/Checkbox.stories.ts": [
+                {
+                    "name": "CheckboxArgs",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "stories/Checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 187
+                }
             ]
         }
     },
@@ -283,6 +639,15 @@
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx/src/lib/checkbox/checkbox.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CheckboxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
                 "status": "low"
             },
             {
@@ -317,6 +682,26 @@
             },
             {
                 "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

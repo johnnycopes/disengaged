@@ -14,7 +14,6 @@ export class ButtonComponent {
 
   @HostBinding('class')
   public get hostClasses(): { [key: string]: boolean } {
-    console.log('works?');
     return {
       'ngx-button': true,
       [`ngx-button--${this.buttonStyle}`]: true,
