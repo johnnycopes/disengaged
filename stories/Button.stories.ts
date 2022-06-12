@@ -1,7 +1,7 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/angular/types-6-0';
 import { moduleMetadata } from '@storybook/angular';
-import { ButtonComponent } from '../projects/disengaged/src/lib/button/button.component';
+import { ButtonComponent } from '../projects/ngx/src/lib/button/button.component';
 
 type ButtonArgs = ButtonComponent & { slot: string };
 

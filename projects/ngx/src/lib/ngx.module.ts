@@ -14,4 +14,4 @@ import { ButtonComponent } from './button/button.component';
     ButtonComponent,
   ]
 })
-export class DisengagedModule { }
+export class NgxModule { }

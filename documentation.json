@@ -10,7 +10,7 @@
         {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-5f69e8d2b5a9749690722ea8d2331a88c426121d83df818abda8ac42bbfe025b547b6ea6b67488893efe6261efa6e001bd8d4ce5e67e7df241a54c7254bebe53",
-            "file": "projects/disengaged/src/lib/button/button.component.ts",
+            "file": "projects/ngx/src/lib/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -62,7 +62,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".jc-button {\n  background: red;\n  color: blue;\n}\n",
+                    "data": ".ngx-button {\n  background: red;\n  color: blue;\n}\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -88,7 +88,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/disengaged/src/lib/disengaged.module.ts",
+            "file": "projects/ngx/src/lib/ngx.module.ts",
             "methods": [],
             "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { ButtonComponent } from './button/button.component';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n  ],\n  imports: [\n  ],\n  exports: [\n    ButtonComponent,\n  ]\n})\nexport class DisengagedModule { }\n",
             "children": [
@@ -133,7 +133,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/disengaged/src/test.ts",
+                "file": "projects/ngx/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -153,7 +153,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/disengaged/src/test.ts",
+                "file": "projects/ngx/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -187,7 +187,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "\"primary\" | \"secondary\" | \"ternary\" | \"danger\"",
-                "file": "projects/disengaged/src/lib/button/button.component.ts",
+                "file": "projects/ngx/src/lib/button/button.component.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -196,12 +196,12 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "projects/disengaged/src/test.ts": [
+            "projects/ngx/src/test.ts": [
                 {
                     "name": "context",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/disengaged/src/test.ts",
+                    "file": "projects/ngx/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -211,7 +211,7 @@
                     "name": "require",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/disengaged/src/test.ts",
+                    "file": "projects/ngx/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -256,13 +256,13 @@
                     "kind": 187
                 }
             ],
-            "projects/disengaged/src/lib/button/button.component.ts": [
+            "projects/ngx/src/lib/button/button.component.ts": [
                 {
                     "name": "ButtonStyle",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "\"primary\" | \"secondary\" | \"ternary\" | \"danger\"",
-                    "file": "projects/disengaged/src/lib/button/button.component.ts",
+                    "file": "projects/ngx/src/lib/button/button.component.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -277,7 +277,7 @@
         "status": "low",
         "files": [
             {
-                "filePath": "projects/disengaged/src/lib/button/button.component.ts",
+                "filePath": "projects/ngx/src/lib/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
@@ -286,7 +286,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/disengaged/src/test.ts",
+                "filePath": "projects/ngx/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -296,7 +296,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/disengaged/src/test.ts",
+                "filePath": "projects/ngx/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
