@@ -13,19 +13,13 @@ export default {
       declarations: [ButtonComponent],
     }),
   ],
-  argTypes: {
-    type: {
-      control: 'select',
-      options: ['button', 'reset', 'submit'],
-    },
-  },
 } as Meta;
 
 // More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
 const Template: Story<ButtonArgs> = (args: ButtonArgs) => ({
   props: args,
   template: `
-    <button jc-button
+    <button ngx-button
       [attr.type]="type"
     >
       {{ slot }}
@@ -36,5 +30,4 @@ const Template: Story<ButtonArgs> = (args: ButtonArgs) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   slot: 'Click me!',
-  type: 'button',
 };

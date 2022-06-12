@@ -3,7 +3,7 @@ import { Component, Input, ChangeDetectionStrategy, HostBinding, ViewEncapsulati
 type ButtonStyle = 'primary' | 'secondary' | 'ternary' | 'danger';
 
 @Component({
-  selector: '[jc-button]',
+  selector: '[ngx-button]',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -16,8 +16,8 @@ export class ButtonComponent {
   public get hostClasses(): { [key: string]: boolean } {
     console.log('works?');
     return {
-      'jc-button': true,
-      [`jc-button--${this.buttonStyle}`]: true,
+      'ngx-button': true,
+      [`ngx-button--${this.buttonStyle}`]: true,
     };
   }
 }

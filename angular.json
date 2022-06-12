@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "disengaged": {
+    "ngx": {
       "projectType": "library",
-      "root": "projects/disengaged",
-      "sourceRoot": "projects/disengaged/src",
-      "prefix": "jc",
+      "root": "projects/ngx",
+      "sourceRoot": "projects/ngx/src",
+      "prefix": "ngx",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -17,14 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/disengaged/ng-package.json"
+            "project": "projects/ngx/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/disengaged/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/disengaged/tsconfig.lib.json"
+              "tsConfig": "projects/ngx/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -32,9 +32,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/disengaged/src/test.ts",
-            "tsConfig": "projects/disengaged/tsconfig.spec.json",
-            "karmaConfig": "projects/disengaged/karma.conf.js"
+            "main": "projects/ngx/src/test.ts",
+            "tsConfig": "projects/ngx/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx/karma.conf.js"
           }
         }
       }
