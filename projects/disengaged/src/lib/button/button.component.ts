@@ -5,19 +5,16 @@ type ButtonStyle = 'primary' | 'secondary' | 'ternary' | 'danger';
 @Component({
   selector: '[jc-button]',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css'],
+  styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
 export class ButtonComponent {
   @Input() buttonStyle: ButtonStyle = 'primary';
 
-  @Input()
-  @HostBinding('attr.type')
-  public type: 'submit' | 'button' | 'reset' = 'button';
-
   @HostBinding('class')
   public get hostClasses(): { [key: string]: boolean } {
+    console.log('works?');
     return {
       'jc-button': true,
       [`jc-button--${this.buttonStyle}`]: true,

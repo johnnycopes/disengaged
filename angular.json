@@ -7,7 +7,12 @@
       "projectType": "library",
       "root": "projects/disengaged",
       "sourceRoot": "projects/disengaged/src",
-      "prefix": "lib",
+      "prefix": "jc",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

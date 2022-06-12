@@ -1,5 +1,6 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/angular/types-6-0';
+import { moduleMetadata } from '@storybook/angular';
 import { ButtonComponent } from '../projects/disengaged/src/lib/button/button.component';
 
 type ButtonArgs = ButtonComponent & { slot: string };
@@ -7,6 +8,11 @@ type ButtonArgs = ButtonComponent & { slot: string };
 // More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
 export default {
   title: 'Components/Button',
+  decorators: [
+    moduleMetadata({
+      declarations: [ButtonComponent],
+    }),
+  ],
   argTypes: {
     type: {
       control: 'select',
@@ -20,7 +26,7 @@ const Template: Story<ButtonArgs> = (args: ButtonArgs) => ({
   props: args,
   template: `
     <button jc-button
-      [type]="type"
+      [attr.type]="type"
     >
       {{ slot }}
     </button>

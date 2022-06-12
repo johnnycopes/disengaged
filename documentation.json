@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-ba9c63e3ed05be328e049511c4681a4245abc8912ed32d3625164227d25c70d482108bbaa39d8ab71c28392f05fb9185f63744d9343e3e8c9eaadbd5c8b48d39",
+            "id": "component-ButtonComponent-04d64d8f82df67f525da8c48b2e0b52544dca010d7abab78b2ceca55de66a24f7705f53b0a2e7cc179397920a605beb34853fe6f134bef8c29ed2d5fa6d1426b",
             "file": "projects/disengaged/src/lib/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -21,7 +21,7 @@
             "providers": [],
             "selector": "[jc-button]",
             "styleUrls": [
-                "./button.component.css"
+                "./button.component.scss"
             ],
             "styles": [],
             "templateUrl": [
@@ -67,12 +67,12 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, ChangeDetectionStrategy, HostBinding, ViewEncapsulation } from '@angular/core';\n\ntype ButtonStyle = 'primary' | 'secondary' | 'ternary' | 'danger';\n\n@Component({\n  selector: '[jc-button]',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None,\n})\nexport class ButtonComponent {\n  @Input() buttonStyle: ButtonStyle = 'primary';\n\n  @Input()\n  @HostBinding('attr.type')\n  public type: 'submit' | 'button' | 'reset' = 'button';\n\n  @HostBinding('class')\n  public get hostClasses(): { [key: string]: boolean } {\n    return {\n      'jc-button': true,\n      [`jc-button--${this.buttonStyle}`]: true,\n    };\n  }\n}\n",
+            "sourceCode": "import { Component, Input, ChangeDetectionStrategy, HostBinding, ViewEncapsulation } from '@angular/core';\n\ntype ButtonStyle = 'primary' | 'secondary' | 'ternary' | 'danger';\n\n@Component({\n  selector: '[jc-button]',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None,\n})\nexport class ButtonComponent {\n  @Input() buttonStyle: ButtonStyle = 'primary';\n\n  @Input()\n  @HostBinding('attr.type')\n  public type: 'submit' | 'button' | 'reset' = 'button';\n\n  @HostBinding('class')\n  public get hostClasses(): { [key: string]: boolean } {\n    console.log('works?');\n    return {\n      'whoa jc-button': true,\n      [`jc-button--${this.buttonStyle}`]: true,\n    };\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
-                    "styleUrl": "./button.component.css"
+                    "data": ".jc-button {\n  background: red;\n  color: blue;\n}\n\np {\n  color: goldenrod;\n}\n",
+                    "styleUrl": "./button.component.scss"
                 }
             ],
             "stylesData": "",
@@ -87,7 +87,7 @@
                     }
                 }
             },
-            "templateData": "<ng-content></ng-content>\n"
+            "templateData": "<ng-content></ng-content>\n<p>hi</p>\n"
         }
     ],
     "modules": [
@@ -175,7 +175,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonArgs>",
-                "defaultValue": "(args: ButtonArgs) => ({\n  props: args,\n  template: `\n    <button jc-button>\n      {{ slot }}\n    </button>\n  `,\n})"
+                "defaultValue": "(args: ButtonArgs) => ({\n  props: args,\n  template: `\n    <button jc-button\n      [type]=\"type\"\n    >\n      {{ slot }}\n    </button>\n  `,\n})"
             }
         ],
         "functions": [],
@@ -245,7 +245,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonArgs>",
-                    "defaultValue": "(args: ButtonArgs) => ({\n  props: args,\n  template: `\n    <button jc-button>\n      {{ slot }}\n    </button>\n  `,\n})"
+                    "defaultValue": "(args: ButtonArgs) => ({\n  props: args,\n  template: `\n    <button jc-button\n      [type]=\"type\"\n    >\n      {{ slot }}\n    </button>\n  `,\n})"
                 }
             ]
         },
